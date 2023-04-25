@@ -1,0 +1,72 @@
+.slidercont .addsliderimg {
+    width: 50%;
+    border: 1px solid var(--col1);
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.slidercont .addsliderimg button {
+    width: 50%;
+    height: 100%;
+    border: none;
+    background: var(--col1);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 10px;
+}
+
+.managesliderimg{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.sliderimgcont {
+    width: 30%;
+    border: 1px solid var(--col1);
+    display: flex;
+    justify-content: center;
+    margin: 5px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.sliderimgcont img {
+    width: 100%;
+    height: 100%;
+}
+
+.slidercont .deletebtn{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: var(--col1);
+    color: rgb(255, 255, 255);
+    font-size: 9px;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.slidercont h1{
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .slidercont .addsliderimg {
+        width: 80%;
+    }
+    .slidercont .addsliderimg button {
+        width: 30%;
+    }
+    .sliderimgcont {
+        width: 80%;
+    }
+}

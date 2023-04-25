@@ -1,0 +1,60 @@
+.manageproducts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+.prodsearchbar {
+    width: 500px;
+    align-self: center;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    margin: 20px 10px;
+}
+
+@media screen and (max-width: 550px) {
+    .prodsearchbar {
+        width: 250px;
+        align-self: center;
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 20px;
+        margin: 20px 10px;
+    }
+}
+
+
+
+.editproductout {
+    background-color: rgb(255, 244, 94);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    opacity: 0.9;
+    flex-direction: column;
+    overflow: scroll;
+    padding: 50px 0px;
+}
+
+.goback {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.562);
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 20px;
+}

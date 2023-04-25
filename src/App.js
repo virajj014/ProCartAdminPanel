@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+
+import AddFoodData from './components/AddFoodData';
+
+import OrderSection from './components/OrderSection';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import ShowDetails from './components/ShowDetails';
+import ManageProducts from './components/Manage/ManageProducts';
+import ManageSlider from './components/Manage/ManageSlider';
+import Login from './components/Login';
+import ManageOfferImages from './components/Manage/ManageOfferImages';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <div className="Container">
+    //   {/* <AddFoodData /> */}
+    //   <OrderSection />
+    // </div>
+
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<OrderSection />} />
+        <Route path="/addproduct" element={<AddFoodData />} />
+        <Route path="/orderdetails/:orderid" element={<ShowDetails />} />
+        <Route path="/manageproducts" element={<ManageProducts />} />
+        <Route path="/orders" element={<OrderSection />} />
+        <Route path="/manageslider" element={<ManageSlider />} />
+        <Route path="/manageofferimages" element={<ManageOfferImages />} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="*" element={<h1>404 Not Found</h1>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
